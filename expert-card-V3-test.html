@@ -16,6 +16,10 @@
             box-sizing: border-box;
         }
 
+        body {
+            padding: 0 12px;
+        }
+
         /* 金牌業務卡片的CSS */
 
         /* 隱藏狀態 - 完全隱藏，不佔據空間 */
@@ -46,7 +50,7 @@
             z-index: 0;
             line-height: 1.5;
             letter-spacing: 0px;
-            margin: 30px 0;    
+            margin: 30px 0;
         }
 
         .expert-card-wrapper::before {
@@ -92,31 +96,31 @@
         }
 
         .expert-pin {
-            width: 6px;
-            height: 6px;
-            background: #c1a75a;
+            width: 5px;
+            height: 5px;
+            background: #d6ae58;
             border-radius: 50%;
             position: absolute;
         }
 
         .expert-pin-tl {
-            top: 12px;
-            left: 12px;
+            top: 10px;
+            left: 10px;
         }
 
         .expert-pin-tr {
-            top: 12px;
-            right: 12px;
+            top: 10px;
+            right: 10px;
         }
 
         .expert-pin-bl {
-            bottom: 12px;
-            left: 12px;
+            bottom: 10px;
+            left: 10px;
         }
 
         .expert-pin-br {
-            bottom: 12px;
-            right: 12px;
+            bottom: 10px;
+            right: 10px;
         }
 
         .expert-badge {
@@ -149,7 +153,7 @@
             border: 3px solid white;
             object-fit: cover;
             margin-right: 15px !important;
-            box-shadow: 0 2px 6px rgba(77, 47, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(69, 43, 0, 0.1);
         }
 
         .expert-info {
@@ -157,7 +161,7 @@
         }
 
         .expert-title {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
             margin-bottom: 6px;
         }
@@ -221,7 +225,7 @@
 
 
         .expert-card-wrapper.expert-style-a .expert-card {
-      background: linear-gradient(135deg, #fff7cd, #ffefbb, #fff7cd, #ffe89c);
+            background: linear-gradient(135deg, #fff7cd, #ffefbb, #fff7cd, #ffe89c);
 
         }
 
@@ -230,13 +234,33 @@
 
         }
 
+        .expert-card-wrapper.expert-style-b2 .expert-card {
+            background: linear-gradient(120deg, rgb(255, 227, 126) 0%, #ffe68d 5%, #fff8d2 15%, #fffbec 20%, #ffe68d 55%, #fff7e0 75%, #fcd36c 100%);
+
+        }
+
+
+        .expert-card-wrapper.expert-style-b2 .expert-card .expert-pin {
+            display: none;
+            background: #88684f;
+        }
+
+        .expert-card-wrapper.expert-style-b2::before {
+            /* padding: 0 !important; */
+            background: linear-gradient(130deg, #fff6d5, #eccb7d, #fff2d4, #f4c978, #ffedb1, #e6c079, #e7c57c);
+            animation: borderFlow 10s linear infinite;
+        }
+
+
+
+
         .expert-card-wrapper.expert-style-c .expert-card {
             background: linear-gradient(120deg, rgb(255, 227, 126) 5%, #ffe68d 10%, #fff8d2 20%, #fff8d2 30%, #fffbec 35%, #ffe68d 60%, #fff7e0 85%, #fcd36c 100%);
 
         }
 
 
-        
+
         .expert-card-wrapper.expert-style-c {
             padding: 0 !important;
         }
@@ -249,14 +273,12 @@
 
         .expert-card-wrapper.expert-style-d::before {
             /* padding: 0 !important; */
-           background: linear-gradient(130deg, #5d4028, #a6813b, #ffe8b7, #634c16, #ffedb1, #412e0b, #e7c57c);
-
-
+            background: linear-gradient(130deg, #5d4028, #a6813b, #ffe8b7, #634c16, #ffedb1, #412e0b, #e7c57c);
         }
 
 
 
-           .expert-card-wrapper.expert-style-e .expert-card {
+        .expert-card-wrapper.expert-style-e .expert-card {
             background: linear-gradient(125deg, rgb(207, 184, 138) 0%, rgb(224, 191, 153) 17%, rgba(247, 233, 218, 1) 31%, rgb(215, 201, 173) 44%, rgb(206, 184, 137) 59%, rgba(168, 140, 114, 1) 70%, rgba(207, 178, 149, 1) 81%, rgb(175, 158, 122) 88%);
         }
 
@@ -264,7 +286,7 @@
 
         .expert-card-wrapper.expert-style-e::before {
             /* padding: 0 !important; */
-           background: linear-gradient(130deg, #5d4028, #a6813b, #ffe8b7, #634c16, #ffedb1, #412e0b, #e7c57c);
+            background: linear-gradient(130deg, #5d4028, #a6813b, #ffe8b7, #634c16, #ffedb1, #412e0b, #e7c57c);
 
 
         }
@@ -295,7 +317,7 @@
 
         .expert-level-mark {
             position: absolute;
-            right: 18px;
+            right:12px;
             top: 10px;
             font-family: "Shrikhand", serif;
             font-style: italic;
@@ -338,6 +360,15 @@
         }
 
 
+        @media (min-width: 414px) {
+            .expert-level-mark {
+                font-size: 1.4rem;
+                right: 15px;
+                top: 7px;
+            }
+        }
+
+
 
 
 
@@ -369,9 +400,30 @@
             }
 
             .expert-pin {
-                width: 10px;
-                height: 10px;
+                width: 9px;
+                height: 9px;
             }
+
+            .expert-pin-tl {
+                top: 12px;
+                left: 12px;
+            }
+
+            .expert-pin-tr {
+                top: 12px;
+                right: 12px;
+            }
+
+            .expert-pin-bl {
+                bottom: 12px;
+                left: 12px;
+            }
+
+            .expert-pin-br {
+                bottom: 12px;
+                right: 12px;
+            }
+
 
             .expert-title {
                 font-size: 1.7rem;
@@ -419,6 +471,7 @@
                 border-radius: 12px;
                 border: 4px solid white;
                 margin-right: 30px !important;
+                box-shadow: 0 2px 5px #dcad6ccc;
             }
 
             .expert-name {
@@ -439,37 +492,41 @@
     </style>
 
     <style>
-/* 桌面預覽時，保證不出水平卷軸 */
-html.force-desktop,
-html.force-desktop body {
-  overflow-x: hidden;
-}
+        /* 桌面預覽時，保證不出水平卷軸 */
+        html.force-desktop,
+        html.force-desktop body {
+            overflow-x: hidden;
+        }
 
-/* 只縮放這個舞台容器 */
-#preview-stage {
-  transform-origin: top left;
-}
+        /* 只縮放這個舞台容器 */
+        #preview-stage {
+            transform-origin: top left;
+        }
 
-/* 桌面預覽：舞台被視為 1200px 寬，靠左（不要置中），預留按鈕高度 */
-html.force-desktop #preview-stage {
-  width: 1200px;     /* 你的桌面寬，可改 992/1280/1440 */
-  margin: 56px 0 0;  /* 上方預留給切換按鈕區 */
-  display: block;
-  position: relative;
-  left: 0;
-}
+        /* 桌面預覽：舞台被視為 1200px 寬，靠左（不要置中），預留按鈕高度 */
+        html.force-desktop #preview-stage {
+            width: 1200px;
+            /* 你的桌面寬，可改 992/1280/1440 */
+            margin: 56px 0 0;
+            /* 上方預留給切換按鈕區 */
+            display: block;
+            position: relative;
+            left: 0;
+        }
 
-/* 支援 zoom 的瀏覽器（Chrome/Safari）用 zoom，畫面更銳利 */
-@supports (zoom: 1) {
-  html.force-desktop #preview-stage { zoom: var(--ds, 1); }
-}
-/* 其他瀏覽器用 transform 備援 */
-@supports not (zoom: 1) {
-  html.force-desktop #preview-stage { transform: scale(var(--ds, 1)); }
-}
+        /* 支援 zoom 的瀏覽器（Chrome/Safari）用 zoom，畫面更銳利 */
+        @supports (zoom: 1) {
+            html.force-desktop #preview-stage {
+                zoom: var(--ds, 1);
+            }
+        }
 
-
-
+        /* 其他瀏覽器用 transform 備援 */
+        @supports not (zoom: 1) {
+            html.force-desktop #preview-stage {
+                transform: scale(var(--ds, 1));
+            }
+        }
     </style>
 
     <script>
@@ -488,7 +545,7 @@ html.force-desktop #preview-stage {
                 styleClass: "expert-style-a"
             },
             {
-                level: "社區專家",
+                level: "社區大師",
                 name: "黃道威",
                 phone: "0988123456",
                 line: "https://line.me/ti/p/abc123",
@@ -499,6 +556,19 @@ html.force-desktop #preview-stage {
                 start: "2025-08-01 00:00:00",
                 end: "2025-08-30 00:00:00",
                 styleClass: "expert-style-b"
+            },
+            {
+                level: "社區大師",
+                name: "謝霆鋒",
+                phone: "漸層亮光閃姓名",
+                line: "https://line.me/ti/p/abc123",
+                license: "104年登字第123456號",
+                company: "敦璟開發股份有限公司",
+                image: "https://i.kfs.io/playlist/global/60721797v4/cropresize/600x600.jpg",
+                container: "#expert-container",
+                start: "2025-08-01 00:00:00",
+                end: "2025-08-30 00:00:00",
+                styleClass: "expert-style-b2"
             },
             {
                 level: "社區大師",
@@ -538,19 +608,25 @@ html.force-desktop #preview-stage {
 
 <body>
 
-<!-- 固定在最上方，不會被縮放 -->
-<div id="preview-controls" style="position:fixed;top:0;left:10px;z-index:9999;background:#fff;padding:6px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)">
-  <button style="padding:10px;margin-right: 20px;" onclick="toMobile()">手機版</button>
-  <button style="padding:10px;" onclick="toDesktop()">桌面版</button>
-</div>
-<!-- 你的原本內容不用改，JS 會自動把它們包進 #preview-stage -->
+    <!-- 固定在最上方，不會被縮放 -->
+    <div id="preview-controls" style="background:#fff;text-align:center;position: fixed;left: 0;z-index: 999;">
+        <button style="padding:10px;margin-right: 20px;" onclick="toMobile()">手機版</button>
+        <button style="padding:10px;" onclick="toDesktop()">桌面版</button>
+    </div>
+    <!-- 你的原本內容不用改，JS 會自動把它們包進 #preview-stage -->
 
-   <h2>雙橡園2279｜環景空拍</h2>
-<p>1.原版</p>
-<p>2.金屬版</p>
-<p>3.金屬無框版</p>
-<p>4.DAD古銅金屬</p>
+    <h2>雙橡園2279｜環景空拍</h2>
+    <p>1.原版</p>
+    <p>2.金屬版</p>
+    <p>3.金屬無框版</p>
+    <p>4.DAD古銅金屬</p>
     <div id="expert-container">　</div>
+
+    <h2>社區地圖</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, laboriosam explicabo optio ea deserunt hic,
+        repellat necessitatibus ab aspernatur voluptas odit cumque velit accusamus voluptate error aut quas nam!
+        Voluptatibus.</p>
 
 
 
@@ -640,7 +716,7 @@ html.force-desktop #preview-stage {
                         const imageSrc = this.escapeHtml(opt.image);
                         const styleClass = this.escapeHtml(opt.styleClass || '');
                         return `
- 
+
          <div class="expert-card-wrapper expert-platinum ${styleClass} animate__animated expert-card-hidden" data-animate="animate__flipInY">
   <div class="expert-card expert-platinum ${lvl.class}">
               <div class="expert-pin expert-pin-tl"></div>
@@ -858,73 +934,73 @@ html.force-desktop #preview-stage {
 
 
 
-<!-- 切換按鈕 -->
-<script>
-(function () {
-  // 確保 viewport
-  let vp = document.querySelector('meta[name="viewport"]');
-  if (!vp) {
-    vp = document.createElement('meta');
-    vp.name = 'viewport';
-    document.head.appendChild(vp);
-  }
+    <!-- 切換按鈕 -->
+    <script>
+        (function () {
+            // 確保 viewport
+            let vp = document.querySelector('meta[name="viewport"]');
+            if (!vp) {
+                vp = document.createElement('meta');
+                vp.name = 'viewport';
+                document.head.appendChild(vp);
+            }
 
-  // 把所有 body 子節點（除了控制列）包進 #preview-stage
-  function ensureStage() {
-    let stage = document.getElementById('preview-stage');
-    if (stage) return stage;
+            // 把所有 body 子節點（除了控制列）包進 #preview-stage
+            function ensureStage() {
+                let stage = document.getElementById('preview-stage');
+                if (stage) return stage;
 
-    stage = document.createElement('div');
-    stage.id = 'preview-stage';
+                stage = document.createElement('div');
+                stage.id = 'preview-stage';
 
-    const controls = document.getElementById('preview-controls');
-    const kids = Array.from(document.body.childNodes);
-    kids.forEach(node => {
-      if (controls && controls.contains(node)) return;
-      if (node === controls) return;
-      stage.appendChild(node);
-    });
-    document.body.appendChild(stage);
-    return stage;
-  }
+                const controls = document.getElementById('preview-controls');
+                const kids = Array.from(document.body.childNodes);
+                kids.forEach(node => {
+                    if (controls && controls.contains(node)) return;
+                    if (node === controls) return;
+                    stage.appendChild(node);
+                });
+                document.body.appendChild(stage);
+                return stage;
+            }
 
-  const DESKTOP_WIDTH = 1200; // ← 你的桌面版寬（可改 992/1280/1440）
+            const DESKTOP_WIDTH = 1200; // ← 你的桌面版寬（可改 992/1280/1440）
 
-  function computeScale() {
-    const vw = Math.min(window.innerWidth, screen.width || window.innerWidth);
-    return Math.min(1, vw / DESKTOP_WIDTH); // 縮到剛好滿版，不放大超過 1
-  }
+            function computeScale() {
+                const vw = Math.min(window.innerWidth, screen.width || window.innerWidth);
+                return Math.min(1, vw / DESKTOP_WIDTH); // 縮到剛好滿版，不放大超過 1
+            }
 
-  // 手機版
-  window.toMobile = function () {
-    vp.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
-    document.documentElement.classList.remove('force-desktop');
-    document.documentElement.style.removeProperty('--ds');
-    requestAnimationFrame(() => document.body.getBoundingClientRect()); // 讓 iOS 重新排版
-  };
+            // 手機版
+            window.toMobile = function () {
+                vp.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+                document.documentElement.classList.remove('force-desktop');
+                document.documentElement.style.removeProperty('--ds');
+                requestAnimationFrame(() => document.body.getBoundingClientRect()); // 讓 iOS 重新排版
+            };
 
-  // 桌面預覽（滿版縮放）
-  window.toDesktop = function () {
-    ensureStage();
-    vp.setAttribute('content', `width=${DESKTOP_WIDTH}, initial-scale=1`); // 觸發桌面媒體查詢
-    const scale = computeScale();                      // 算出剛好貼滿手機寬的縮放倍率
-    const root = document.documentElement;
-    root.classList.add('force-desktop');
-    root.style.setProperty('--ds', scale);
-    requestAnimationFrame(() => document.body.getBoundingClientRect()); // iOS Safari 偶爾不重算
-  };
+            // 桌面預覽（滿版縮放）
+            window.toDesktop = function () {
+                ensureStage();
+                vp.setAttribute('content', `width=${DESKTOP_WIDTH}, initial-scale=1`); // 觸發桌面媒體查詢
+                const scale = computeScale();                      // 算出剛好貼滿手機寬的縮放倍率
+                const root = document.documentElement;
+                root.classList.add('force-desktop');
+                root.style.setProperty('--ds', scale);
+                requestAnimationFrame(() => document.body.getBoundingClientRect()); // iOS Safari 偶爾不重算
+            };
 
-  // 旋轉/改寬時，若在桌面預覽就重算縮放
-  window.addEventListener('resize', () => {
-    if (document.documentElement.classList.contains('force-desktop')) {
-      document.documentElement.style.setProperty('--ds', computeScale());
-    }
-  });
+            // 旋轉/改寬時，若在桌面預覽就重算縮放
+            window.addEventListener('resize', () => {
+                if (document.documentElement.classList.contains('force-desktop')) {
+                    document.documentElement.style.setProperty('--ds', computeScale());
+                }
+            });
 
-  // 預設手機
-  toMobile();
-})();
-</script>
+            // 預設手機
+            toMobile();
+        })();
+    </script>
 
 </body>
 
