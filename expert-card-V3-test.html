@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=m0LRfOmEomHFF13xfK3y7donwBUFkGLI1lrXwa0ShdVGHsEeer19IJUaf-KHcDvMovlEyutlRoUm3R0SS9gBw1kYMXVlx35BZXjCDoYOw1rZiSAWLmzPbjCair5hsDKa"
+        charset="UTF-8"></script>
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
+
         /* 金牌業務卡片的CSS */
 
         /* 隱藏狀態 - 完全隱藏，不佔據空間 */
@@ -37,7 +41,7 @@
         .expert-card-wrapper {
             position: relative;
             padding: 3px;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
             width: 100%;
             max-width: 1000px;
@@ -45,8 +49,7 @@
             z-index: 0;
             line-height: 1.5;
             letter-spacing: 0px;
-            margin: 20px 0;
-            margin-bottom: 60px;
+            margin: 30px 0;    
         }
 
         .expert-card-wrapper::before {
@@ -57,11 +60,11 @@
             right: -3px;
             bottom: -3px;
             border-radius: 0;
-            background: linear-gradient(130deg, #fff6d5, #a6813b, #ffe8b7, #a57d1f, #ffedb1, #b38b40, #e7c57c);
+            background: linear-gradient(130deg, #fff6d5, #8f6318, #fff2d4, #a57d1f, #ffedb1, #967230, #e7c57c);
             background-size: 400% 400%;
             animation: borderFlow 10s linear infinite;
             z-index: -2;
-            box-shadow: 0 0 5px rgba(106, 70, 19, 0.715);
+            /* box-shadow: 0 0 0px rgba(106, 70, 19, 0.715); */
         }
 
 
@@ -82,7 +85,7 @@
         }
 
         .expert-card {
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 10px 22px;
             position: relative;
             display: flex;
@@ -145,11 +148,11 @@
         .expert-profile {
             width: 80px !important;
             height: 80px !important;
-            border-radius: 12px;
-            border: 4px solid white;
+            border-radius: 8px;
+            border: 3px solid white;
             object-fit: cover;
             margin-right: 15px !important;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 6px rgba(77, 47, 0, 0.1);
         }
 
         .expert-info {
@@ -212,7 +215,7 @@
             background-size: cover;
 
             background: linear-gradient(135deg, #F2E3B3, #D9C49C, #ffe0c3, #ffe9d7);
-            box-shadow: 0 0 5px #b78009;
+            box-shadow: 0 0 3px #b78009;
         }
 
 
@@ -221,7 +224,7 @@
 
 
         .expert-card-wrapper.expert-style-a .expert-card {
-            background: linear-gradient(135deg, #fff7cd, #ffefbb, #fff7cd, #ffe89c);
+      background: linear-gradient(135deg, #fff7cd, #ffefbb, #fff7cd, #ffe89c);
 
         }
 
@@ -235,20 +238,54 @@
 
         }
 
+
+        
+        .expert-card-wrapper.expert-style-c {
+            padding: 0 !important;
+        }
+
         .expert-card-wrapper.expert-style-d .expert-card {
             background: linear-gradient(125deg, rgba(168, 140, 114, 1) 0%, rgba(215, 192, 166, 1) 17%, rgba(247, 233, 218, 1) 31%, rgba(215, 194, 173, 1) 44%, rgba(181, 155, 130, 1) 59%, rgba(168, 140, 114, 1) 70%, rgba(207, 178, 149, 1) 81%, rgba(168, 140, 114, 1) 88%);
         }
 
 
-        .expert-card-wrapper.expert-style-c {
-            padding: 0 !important;
+
+        .expert-card-wrapper.expert-style-d::before {
+            /* padding: 0 !important; */
+           background: linear-gradient(130deg, #5d4028, #a6813b, #ffe8b7, #634c16, #ffedb1, #412e0b, #e7c57c);
+
+
         }
 
-        .expert-card-wrapper.expert-style-d {
-            padding: 0 !important;
+
+
+           .expert-card-wrapper.expert-style-e .expert-card {
+            background: linear-gradient(125deg, rgb(207, 184, 138) 0%, rgb(224, 191, 153) 17%, rgba(247, 233, 218, 1) 31%, rgb(215, 201, 173) 44%, rgb(206, 184, 137) 59%, rgba(168, 140, 114, 1) 70%, rgba(207, 178, 149, 1) 81%, rgb(175, 158, 122) 88%);
         }
 
-        /* 覆蓋樣式用 */
+
+
+        .expert-card-wrapper.expert-style-e::before {
+            /* padding: 0 !important; */
+           background: linear-gradient(130deg, #5d4028, #a6813b, #ffe8b7, #634c16, #ffedb1, #412e0b, #e7c57c);
+
+
+        }
+
+
+        .expert-card-wrapper.expert-style-d .expert-card .expert-pin {
+            background: #88684f;
+        }
+
+
+        .expert-card-wrapper.expert-style-d .expert-level-mark {
+            color: rgba(121, 87, 32, 0.5);
+
+        }
+
+
+
+        /* 覆蓋樣式用結束 */
 
         .expert-platinum .expert-contact a {
             color: #fff;
@@ -308,29 +345,29 @@
 
 
         @media screen and (min-width: 992px) {
-              .expert-card-wrapper {
-            position: relative;
-            padding: 6px;
-            border-radius: 15px;
-            overflow: hidden;
-            width: 100%;
-            max-width: 1000px;
-            background: #fff;
-            z-index: 0;
-            line-height: 1.5;
-            letter-spacing: 0px;
-            margin: 20px 0;
-            margin-bottom: 60px;
-        }
+            .expert-card-wrapper {
+                position: relative;
+                padding: 6px;
+                border-radius: 15px;
+                overflow: hidden;
+                width: 100%;
+                max-width: 1000px;
+                background: #fff;
+                z-index: 0;
+                line-height: 1.5;
+                letter-spacing: 0px;
+                margin: 20px 0;
+                margin-bottom: 60px;
+            }
 
-        
-    .expert-card-wrapper::before {
 
-            box-shadow: 0 0 16px rgba(106, 70, 19, 0.715);
-        }
-       
+            .expert-card-wrapper::before {
+
+                box-shadow: 0 0 16px rgba(106, 70, 19, 0.715);
+            }
+
             .expert-card {
-                 border-radius: 15px;
+                border-radius: 15px;
                 padding: 28px;
             }
 
@@ -348,7 +385,10 @@
 
             }
 
+            .expert-platinum {
 
+                box-shadow: 0 0 5px #b78009;
+            }
 
 
             .expert-contact a {
@@ -378,6 +418,9 @@
             .expert-profile {
                 width: 120px !important;
                 height: 120px !important;
+
+                border-radius: 12px;
+                border: 4px solid white;
                 margin-right: 30px !important;
             }
 
@@ -398,6 +441,40 @@
         }
     </style>
 
+    <style>
+/* 桌面預覽時，保證不出水平卷軸 */
+html.force-desktop,
+html.force-desktop body {
+  overflow-x: hidden;
+}
+
+/* 只縮放這個舞台容器 */
+#preview-stage {
+  transform-origin: top left;
+}
+
+/* 桌面預覽：舞台被視為 1200px 寬，靠左（不要置中），預留按鈕高度 */
+html.force-desktop #preview-stage {
+  width: 1200px;     /* 你的桌面寬，可改 992/1280/1440 */
+  margin: 56px 0 0;  /* 上方預留給切換按鈕區 */
+  display: block;
+  position: relative;
+  left: 0;
+}
+
+/* 支援 zoom 的瀏覽器（Chrome/Safari）用 zoom，畫面更銳利 */
+@supports (zoom: 1) {
+  html.force-desktop #preview-stage { zoom: var(--ds, 1); }
+}
+/* 其他瀏覽器用 transform 備援 */
+@supports not (zoom: 1) {
+  html.force-desktop #preview-stage { transform: scale(var(--ds, 1)); }
+}
+
+
+
+    </style>
+
     <script>
         window.expertCardList = [
             {
@@ -411,7 +488,7 @@
                 container: "#expert-container",
                 start: "2025-08-01 00:00:00",
                 end: "2025-08-30 00:00:00",
-                styleClass: "expert-card-wrapper expert-style-a"
+                styleClass: "expert-style-a"
             },
             {
                 level: "社區專家",
@@ -437,7 +514,7 @@
                 container: "#expert-container",
                 start: "2025-08-01 00:00:00",
                 end: "2025-08-30 00:00:00",
-                styleClass: "expert-style-c expert-card-wrapper-c"
+                styleClass: "expert-style-c"
             },
             {
                 level: "社區專家",
@@ -452,33 +529,28 @@
                 end: "2025-08-30 00:00:00",
                 styleClass: "expert-style-d"
             }
+
         ];
     </script>
+
+
+
+
 
 </head>
 
 <body>
 
-    <h2>雙橡園2279｜基本資料</h2>
-    <ul>
-        <li>建案位置：台中市西屯區馬龍潭路1、3號</li>
-        <li>坐落地號：西屯區龍富段78地號</li>
-        <li>建設公司：雙橡園建設</li>
-        <li>基地面積：2279坪</li>
-        <li>建築結構：SRC鋼骨鋼筋混凝土</li>
-        <li>樓層高度：3.45米</li>
-        <li>整體設計：地下3層、地上33層</li>
-        <li>總體戶數：180戶</li>
-        <li>戶梯配置：6戶4梯</li>
-        <li>房型規劃：3房、4房</li>
-        <li>車位數量：平車364個</li>
-        <li>管理費用：待定</li>
-        <li>公設配置：接待大廳、中庭花園、空中花園、閱覽室、健身房、親子遊戲區、信箱區、曬被區</li>
-    </ul>
+<!-- 固定在最上方，不會被縮放 -->
+<div id="preview-controls" style="position:fixed;top:0;left:10px;z-index:9999;background:#fff;padding:6px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)">
+  <button style="padding:10px;margin-right: 20px;" onclick="toMobile()">手機版</button>
+  <button style="padding:10px;" onclick="toDesktop()">桌面版</button>
+</div>
+<!-- 你的原本內容不用改，JS 會自動把它們包進 #preview-stage -->
+
 
     <div id="expert-container">　</div>
 
-    <h2>雙橡園2279｜環景空拍</h2>
 
 
 
@@ -567,6 +639,7 @@
                         const imageSrc = this.escapeHtml(opt.image);
                         const styleClass = this.escapeHtml(opt.styleClass || '');
                         return `
+
          <div class="expert-card-wrapper expert-platinum ${styleClass} animate__animated expert-card-hidden" data-animate="animate__flipInY">
   <div class="expert-card expert-platinum ${lvl.class}">
               <div class="expert-pin expert-pin-tl"></div>
@@ -593,6 +666,12 @@
               </div>
             </div>
           </div>
+          <h2>雙橡園2279｜環景空拍</h2>
+          <ul>
+        <li>建案位置：台中市西屯區馬龍潭路1、3號</li>
+        <li>坐落地號：西屯區龍富段78地號</li>
+  
+    </ul>
         `;
                     } catch (error) {
                         console.error('ExpertCard: HTML生成失敗', error);
@@ -773,6 +852,79 @@
         })(window, document);
 
     </script>
+
+
+
+
+
+<!-- 切換按鈕 -->
+<script>
+(function () {
+  // 確保 viewport
+  let vp = document.querySelector('meta[name="viewport"]');
+  if (!vp) {
+    vp = document.createElement('meta');
+    vp.name = 'viewport';
+    document.head.appendChild(vp);
+  }
+
+  // 把所有 body 子節點（除了控制列）包進 #preview-stage
+  function ensureStage() {
+    let stage = document.getElementById('preview-stage');
+    if (stage) return stage;
+
+    stage = document.createElement('div');
+    stage.id = 'preview-stage';
+
+    const controls = document.getElementById('preview-controls');
+    const kids = Array.from(document.body.childNodes);
+    kids.forEach(node => {
+      if (controls && controls.contains(node)) return;
+      if (node === controls) return;
+      stage.appendChild(node);
+    });
+    document.body.appendChild(stage);
+    return stage;
+  }
+
+  const DESKTOP_WIDTH = 1200; // ← 你的桌面版寬（可改 992/1280/1440）
+
+  function computeScale() {
+    const vw = Math.min(window.innerWidth, screen.width || window.innerWidth);
+    return Math.min(1, vw / DESKTOP_WIDTH); // 縮到剛好滿版，不放大超過 1
+  }
+
+  // 手機版
+  window.toMobile = function () {
+    vp.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+    document.documentElement.classList.remove('force-desktop');
+    document.documentElement.style.removeProperty('--ds');
+    requestAnimationFrame(() => document.body.getBoundingClientRect()); // 讓 iOS 重新排版
+  };
+
+  // 桌面預覽（滿版縮放）
+  window.toDesktop = function () {
+    ensureStage();
+    vp.setAttribute('content', `width=${DESKTOP_WIDTH}, initial-scale=1`); // 觸發桌面媒體查詢
+    const scale = computeScale();                      // 算出剛好貼滿手機寬的縮放倍率
+    const root = document.documentElement;
+    root.classList.add('force-desktop');
+    root.style.setProperty('--ds', scale);
+    requestAnimationFrame(() => document.body.getBoundingClientRect()); // iOS Safari 偶爾不重算
+  };
+
+  // 旋轉/改寬時，若在桌面預覽就重算縮放
+  window.addEventListener('resize', () => {
+    if (document.documentElement.classList.contains('force-desktop')) {
+      document.documentElement.style.setProperty('--ds', computeScale());
+    }
+  });
+
+  // 預設手機
+  toMobile();
+})();
+</script>
+
 </body>
 
 </html>
